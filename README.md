@@ -29,7 +29,7 @@ BATCH_SIZE
 
 The first five are used to build the DB's Data Source Name (DSN). The `BATCH_SIZE` serves to configure the size of the group you want GORM to use when inserting in batches.
 
-### Running the app
+### Running the app 🚀
 
 As soon as you're done with the step above, run the following command:
 
