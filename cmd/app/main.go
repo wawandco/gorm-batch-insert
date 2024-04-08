@@ -14,16 +14,6 @@ import (
 	"golang.org/x/text/message"
 )
 
-// Benchmark - BatchSize = 200
-// Batch Inserting with GORM 10,000 took 83.410708ms
-// More to come...
-//
-// Benchmark - BatchSize = 500
-// Batch Inserting with GORM 10,000 took 67.422667ms
-// Batch Inserting with GORM 20,000 took 110.224666ms
-// Batch Inserting with GORM 100,000 took 471.939583ms
-// Batch Inserting with GORM 1,000,000 took 2.769831667s
-
 func main() {
 	err := godotenv.Load(".env")
 	if err != nil {
