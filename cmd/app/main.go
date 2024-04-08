@@ -35,7 +35,7 @@ func main() {
 		log.Fatalf("failed while setting up the database connection: %s", err.Error())
 	}
 
-	fmt.Println("Database started ✅")
+	fmt.Println("Database connection started ✅")
 
 	var in string
 	fmt.Println("How many records would you like to insert? ")
