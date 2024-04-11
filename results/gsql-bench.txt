@@ -1,0 +1,40 @@
+goos: darwin
+goarch: arm64
+pkg: github/andrewmkano/gorm-batch-insert/internal/benchmark
+BenchmarkSaveContactsInBatches/records_number_100-2         	      20	   1788871 ns/op
+BenchmarkSaveContactsInBatches/records_number_100-2         	      20	   1420885 ns/op
+BenchmarkSaveContactsInBatches/records_number_100-2         	      20	   1330410 ns/op
+BenchmarkSaveContactsInBatches/records_number_100-2         	      20	   1407212 ns/op
+BenchmarkSaveContactsInBatches/records_number_100-2         	      20	   1541706 ns/op
+BenchmarkSaveContactsInBatches/records_number_1000-2        	      20	   7246217 ns/op
+BenchmarkSaveContactsInBatches/records_number_1000-2        	      20	   4862048 ns/op
+BenchmarkSaveContactsInBatches/records_number_1000-2        	      20	   3962842 ns/op
+BenchmarkSaveContactsInBatches/records_number_1000-2        	      20	   4061433 ns/op
+BenchmarkSaveContactsInBatches/records_number_1000-2        	      20	   4062046 ns/op
+BenchmarkSaveContactsInBatches/records_number_10000-2       	      20	  55210227 ns/op
+BenchmarkSaveContactsInBatches/records_number_10000-2       	      20	  70113444 ns/op
+BenchmarkSaveContactsInBatches/records_number_10000-2       	      20	  66239569 ns/op
+BenchmarkSaveContactsInBatches/records_number_10000-2       	      20	  74128217 ns/op
+BenchmarkSaveContactsInBatches/records_number_10000-2       	      20	  60034296 ns/op
+BenchmarkSaveContactsInBatches/records_number_100000-2      	      20	 576912521 ns/op
+BenchmarkSaveContactsInBatches/records_number_100000-2      	      20	 535247698 ns/op
+BenchmarkSaveContactsInBatches/records_number_100000-2      	      20	 519916954 ns/op
+BenchmarkSaveContactsInBatches/records_number_100000-2      	      20	 538837804 ns/op
+BenchmarkSaveContactsInBatches/records_number_100000-2      	      20	 523033185 ns/op
+BenchmarkSaveContactsInBatches/records_number_300000-2      	      20	1626938542 ns/op
+BenchmarkSaveContactsInBatches/records_number_300000-2      	      20	1586079719 ns/op
+BenchmarkSaveContactsInBatches/records_number_300000-2      	      20	1619798081 ns/op
+BenchmarkSaveContactsInBatches/records_number_300000-2      	      20	1587949131 ns/op
+BenchmarkSaveContactsInBatches/records_number_300000-2      	      20	1617288917 ns/op
+BenchmarkSaveContactsInBatches/records_number_500000-2      	      20	2668305748 ns/op
+BenchmarkSaveContactsInBatches/records_number_500000-2      	      20	2609065650 ns/op
+BenchmarkSaveContactsInBatches/records_number_500000-2      	      20	2746847869 ns/op
+BenchmarkSaveContactsInBatches/records_number_500000-2      	      20	2622967567 ns/op
+BenchmarkSaveContactsInBatches/records_number_500000-2      	      20	2660604244 ns/op
+BenchmarkSaveContactsInBatches/records_number_1000000-2     	      20	5310534306 ns/op
+BenchmarkSaveContactsInBatches/records_number_1000000-2     	      20	5276855167 ns/op
+BenchmarkSaveContactsInBatches/records_number_1000000-2     	      20	5395255462 ns/op
+BenchmarkSaveContactsInBatches/records_number_1000000-2     	      20	5309838046 ns/op
+BenchmarkSaveContactsInBatches/records_number_1000000-2     	      20	5292257027 ns/op
+PASS
+ok  	github/andrewmkano/gorm-batch-insert/internal/gsqlman	1073.934s
