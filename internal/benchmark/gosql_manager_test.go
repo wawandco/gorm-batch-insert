@@ -4,7 +4,6 @@ package benchmark_test
 // The idea is for these too to hold the same name
 // so when we generate result text file we are able to get
 // a comparison between these two benchmarks using benchstat.
-//
 // func BenchmarkSaveContactsInBatches(b *testing.B) {
 // 	gsqbm, err := gsqlman.NewGoSQLBatchManager()
 // 	if err != nil {

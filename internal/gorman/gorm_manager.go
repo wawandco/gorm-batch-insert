@@ -42,6 +42,10 @@ func setup() (*gorm.DB, error) {
 	return Conn, nil
 }
 
-func (gbm gormBatchManager) SaveContactsInBatches(c any) {
-	gbm.Conn.Create(c)
+func (gbm gormBatchManager) SaveContactsInBatches(c any) error {
+	if gbm.Conn.Create(c); gbm.Conn.Error != nil {
+		return fmt.Errorf("gorm: failed to insert records in batches: %w", gbm.Conn.Error)
+	}
+
+	return nil
 }
