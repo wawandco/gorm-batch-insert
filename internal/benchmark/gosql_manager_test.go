@@ -15,11 +15,11 @@ package benchmark_test
 // 		b.Fatal(err)
 // 	}
 
-// 	internal.PrepareTestCases()
+// 	prepareTestCases()
 
 // 	b.ResetTimer()
 
-// 	for _, tcase := range internal.TCases {
+// 	for _, tcase := range tcases {
 // 		b.Run(fmt.Sprintf("records_number_%d", tcase.RecordsToCreate), func(b *testing.B) {
 // 			for i := 0; i < b.N; i++ {
 // 				err := gsqbm.SaveContactsInBatches(tcase.Contacts)

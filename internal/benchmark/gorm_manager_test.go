@@ -2,7 +2,6 @@ package benchmark_test
 
 import (
 	"fmt"
-	"github/andrewmkano/gorm-batch-insert/internal"
 	"github/andrewmkano/gorm-batch-insert/internal/gorman"
 	"testing"
 )
@@ -15,11 +14,11 @@ func BenchmarkSaveContactsInBatches(b *testing.B) {
 
 	gbm.Conn.Exec("TRUNCATE contacts;")
 
-	internal.PrepareTestCases()
+	prepareTestCases()
 
 	b.ResetTimer()
 
-	for _, tcase := range internal.TCases {
+	for _, tcase := range tcases {
 		b.Run(fmt.Sprintf("records_number_%d", tcase.RecordsToCreate), func(b *testing.B) {
 			for i := 0; i < b.N; i++ {
 				err := gbm.SaveContactsInBatches(tcase.Contacts)
