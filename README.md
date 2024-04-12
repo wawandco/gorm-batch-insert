@@ -56,17 +56,17 @@ $ benchstat results/gsql-bench.txt results/gorm-bench.txt
 
 Both files can be found in the `results` folder but feel free to generate your own if you please. Running the benchstat command should give you results in a the similar shape:
 
-|                       -                        | results/gsql-bench.txt | results/gorm-bench.txt |         Delta         |
-| :--------------------------------------------: | ---------------------- | ---------------------- | :-------------------: |
-|                       -                        | sec/op                 | sec/op vs base         |           -           |
-|   SaveContactsInBatches/records_number_100-2   | 1438.0µ ± 21%          | 974.8µ ± 20%           | -32.22% (p=0.004 n=6) |
-|  SaveContactsInBatches/records_number_1000-2   | 5.606m ± 30%           | 5.029m ± 16%           |    ~ (p=0.093 n=6)    |
-|  SaveContactsInBatches/records_number_10000-2  | 73.15m ± 25%           | 58.86m ± 4%            |    ~ (p=0.065 n=6)    |
+| -                                              | results/gsql-bench.txt | results/gorm-bench.txt |         Delta         |
+| ---------------------------------------------- | ---------------------- | ---------------------- | :-------------------: |
+| -                                              | sec/op                 | sec/op vs base         |           -           |
+| SaveContactsInBatches/records_number_100-2     | 1438.0µ ± 21%          | 974.8µ ± 20%           | -32.22% (p=0.004 n=6) |
+| SaveContactsInBatches/records_number_1000-2    | 5.606m ± 30%           | 5.029m ± 16%           |    ~ (p=0.093 n=6)    |
+| SaveContactsInBatches/records_number_10000-2   | 73.15m ± 25%           | 58.86m ± 4%            |    ~ (p=0.065 n=6)    |
 | SaveContactsInBatches/records_number_100000-2  | 545.5m ± 15%           | 309.6m ± 30%           | -43.25% (p=0.002 n=6) |
 | SaveContactsInBatches/records_number_300000-2  | 1.615 ± 2%             | 1.014 ± 8%             | -37.26% (p=0.002 n=6) |
 | SaveContactsInBatches/records_number_500000-2  | 2.591 ± 6%             | 1.790 ± 12%            | -30.91% (p=0.002 n=6) |
 | SaveContactsInBatches/records_number_1000000-2 | 5.130 ± 6%             | 3.786 ± 4%             | -26.19% (p=0.002 n=6) |
-|                    geomean                     | 183.1m                 | 129.6m                 |        -29.24%        |
+| geomean                                        | 183.1m                 | 129.6m                 |        -29.24%        |
 
 ## Next Steps? 🧐
 
